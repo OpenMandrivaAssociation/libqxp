@@ -1,4 +1,3 @@
-%define _disable_ld_no_undefined 1
 %define major 0
 %define abi 0.0
 %define devname %mklibname qxp -d
@@ -7,6 +6,7 @@ Name: libqxp
 Version: 0.0.0
 Release: 1
 Source0: http://dev-www.libreoffice.org/src/libqxp/libqxp-%{version}.tar.xz
+Patch0: libqxp-0.0.0-link-revenge-stream.patch
 Summary: Library for parsing QuarkXPress files
 URL: https://wiki.documentfoundation.org/DLP/Libraries/libqxp
 License: LGPLv2.1/MPL
@@ -45,6 +45,7 @@ Libqxp is a library that parses the file format of QuarkXPress documents.
 
 %prep
 %setup -q
+%apply_patches
 %configure
 
 %build
