@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libqxp-0.0.0.tar.xz: 51777689c6e6a2057d38783417d5c4b3945a88f1
+sources:
+  libqxp-0.0.1.tar.xz: a5963474afcc8e7b0eb352754325c21e1a1f5e18
