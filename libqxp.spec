@@ -4,7 +4,7 @@
 
 Name: libqxp
 Version: 0.0.1
-Release: 1
+Release: 2
 Source0: http://dev-www.libreoffice.org/src/libqxp/libqxp-%{version}.tar.xz
 Summary: Library for parsing QuarkXPress files
 URL: https://wiki.documentfoundation.org/DLP/Libraries/libqxp
