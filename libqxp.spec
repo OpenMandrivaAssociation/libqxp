@@ -45,7 +45,7 @@ Libqxp is a library that parses the file format of QuarkXPress documents.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 %configure
 
 %build
