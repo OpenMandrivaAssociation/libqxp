@@ -4,7 +4,7 @@
 
 Name: libqxp
 Version:	0.0.2
-Release:	4
+Release:	5
 Source0:	https://dev-www.libreoffice.org/src/libqxp/libqxp-%{version}.tar.xz
 Summary: Library for parsing QuarkXPress files
 URL: https://wiki.documentfoundation.org/DLP/Libraries/libqxp
@@ -16,6 +16,7 @@ BuildRequires: pkgconfig(librevenge-0.0)
 BuildRequires: pkgconfig(icu-uc)
 BuildRequires: boost-devel
 BuildRequires: doxygen
+BuildSystem: autotools
 
 %libpackage qxp %{abi} %{major}
 
@@ -42,17 +43,6 @@ Group: Development/C
 Documentation for %{name}.
 
 Libqxp is a library that parses the file format of QuarkXPress documents.
-
-%prep
-%setup -q
-%autopatch -p1
-%configure
-
-%build
-%make
-
-%install
-%makeinstall_std
 
 %files
 %{_bindir}/qxp2*
