@@ -3,8 +3,8 @@
 %define devname %mklibname qxp -d
 
 Name: libqxp
-Version:	0.0.2
-Release:	9
+Version:	0.0.3
+Release:	1
 Source0:	https://dev-www.libreoffice.org/src/libqxp/libqxp-%{version}.tar.xz
 Summary: Library for parsing QuarkXPress files
 URL: https://wiki.documentfoundation.org/DLP/Libraries/libqxp
