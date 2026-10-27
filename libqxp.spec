@@ -18,6 +18,10 @@ BuildRequires: boost-devel
 BuildRequires: doxygen
 BuildSystem: autotools
 
+# doxygen no longer emits the diagram pngs the Makefile installs.
+%build -a
+find . -type d -path '*/docs/doxygen/html' -exec sh -c 'compgen -G "$1/*.png" >/dev/null || touch "$1/placeholder.png"' _ {} \;
+
 %libpackage qxp %{abi} %{major}
 
 %define libname %mklibname qxp %{abi} %{major}
